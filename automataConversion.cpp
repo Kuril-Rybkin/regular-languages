@@ -466,7 +466,7 @@ bool operator==(const DFA& a, const DFA& b)
 
 int main()
 {
-    /*NFA a1{
+    NFA a1{
             {0, 1, 2},
             {'a', 'b'},
             {
@@ -506,7 +506,6 @@ int main()
             {2},
     };
     DFA aa = intersect(a1, a2);
-    std::cout << "TEST 1" << std::endl;
 
     NFA b1{
             {0, 1, 2, 3, 4},
@@ -560,7 +559,6 @@ int main()
             {1, 5, 8},
     };
     DFA bb = unify(b1, b2);
-    std::cout << "TEST 2" << std::endl;
 
     NFA c1{
             {0, 1, 2, 3, 4},
@@ -594,7 +592,6 @@ int main()
             {},
     };
     DFA cc = intersect(c1, c2);
-    std::cout << "TEST 3" << std::endl;
 
     NFA d1{
             {0, 1, 2, 3},
@@ -641,7 +638,6 @@ int main()
             {1, 2, 3},
     };
     DFA dd = intersect(d1, d2);
-    std::cout << "TEST 4" << std::endl;
 
     NFA e1{
             {0, 1},
@@ -666,7 +662,6 @@ int main()
     };
 
     DFA ee = unify(e1, e2);
-    std::cout << "TEST 5" << std::endl;
 
     NFA f1{
             {0, 1},
@@ -690,7 +685,6 @@ int main()
     };
 
     DFA ff = unify(f1, f2);
-    std::cout << "TEST 6" << std::endl;
 
     NFA g1{
             {0, 1, 2, 3},
@@ -716,7 +710,6 @@ int main()
     };
 
     DFA gg = unify(g1, g2);
-    std::cout << "TEST 7" << std::endl;*/
 
     NFA h1 {
             {0,1,2,3,4,5,6,7,8,9,10,11,12},
@@ -780,6 +773,7 @@ int main()
     };
 
     DFA hh = unify(h1, h2);
-    std::cout << "TEST 7" << std::endl;
+
+    return 0;
 }
 #endif
